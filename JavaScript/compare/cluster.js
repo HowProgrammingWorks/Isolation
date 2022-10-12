@@ -1,7 +1,7 @@
 'use strict';
 
-const cluster = require('cluster');
-const http = require('http');
+const cluster = require('node:cluster');
+const http = require('node:http');
 const { pid } = process;
 
 const PORT = 2000;

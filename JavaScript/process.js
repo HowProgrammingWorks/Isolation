@@ -1,7 +1,7 @@
 'use strict';
 
-const http = require('http');
-const threads = require('worker_threads');
+const http = require('node:http');
+const threads = require('node:worker_threads');
 const { Worker } = threads;
 const { pid } = process;
 
