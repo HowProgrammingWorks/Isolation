@@ -6,7 +6,7 @@ const { pid } = process;
 
 const PORT = 2000;
 
-if (cluster.isMaster) {
+if (cluster.isPrimary) {
   const count = 3;
   for (let i = 0; i < count; i++) cluster.fork();
 } else {

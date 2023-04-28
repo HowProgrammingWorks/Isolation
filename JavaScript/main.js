@@ -9,7 +9,7 @@ const tid = threads.threadId;
 console.log({ tid });
 
 const count = 5;
-console.log(`Master pid: ${pid}, Starting ${count} forks`);
+console.log(`Primary pid: ${pid}, Starting ${count} forks`);
 
 for (let i = 0; i < count; i++) {
   cp.fork('./process.js', [i]);
